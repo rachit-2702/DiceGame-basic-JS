@@ -3,10 +3,10 @@ if (window.performance.navigation.type === 1) {
   rollDice();
 }
 function rollDice(){
-var randomnum1=Math.floor(Math.random()*6+1);
+var randomnum1=Math.floor((Math.random()+Math.random())*3+1);
 var dice1="images/dice"+randomnum1+".png";
 document.querySelectorAll(".dice")[0].setAttribute("src",dice1);
-var randomnum2=Math.floor(Math.random()*6+1);
+var randomnum2=Math.floor((Math.random()+Math.random())*3+1);
 var dice2="images/dice"+randomnum2+".png";
 document.querySelectorAll(".dice")[1].setAttribute("src",dice2);
 if(randomnum1>randomnum2){
